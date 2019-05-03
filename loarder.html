@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Show Design UI</title>
+	</head>
+	<body onload="myFunction()">
+		<!-- Loarder Animation-->
+			<div id="loarder">
+				<img src="loarder.svg" alt="Loarder Animation"> 
+			</div>
+		<!-- End Loarder Animation-->
+
+		<!-- Page Content-->
+			<div id="content" class="animate-bottem">
+				<h2>Welcome</h2>
+				<p>Thanks For Watching</p>
+			</div>
+		<!--End Page Content-->
+			<script type="text/javascript">
+				var Start;
+
+				//Show pagecontent after 2.5s
+				function myFunction(){
+					Start = setTimeout(showpage , 2500);
+				}
+
+				//Hide animation loarder and show page content
+				function showpage(){
+					document.getElementById('loarder').style.display="none";
+					document.getElementById('content').style.display="block";
+				}
+
+			</script>
+	</body>
+</html>
