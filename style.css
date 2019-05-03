@@ -1,0 +1,32 @@
+/* center the loarder */
+#loarder{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    margin: 0 auto;
+}
+
+/* hide content */
+#content{
+    display:none;
+    text-align:center;
+}
+
+/* let'sadd animation de page content */
+.animate-bottem{
+    position: relative;
+    -webkit-animation-name: animatebottem;
+    -moz-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+} 
+
+@-webkit-keyframes animatebottom{
+    from {bottom: -100px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes animate-bottem{
+    from{ bottom: -100px; opacity: 0}
+    to { bottom: 0px; opacity:1}
+}
